@@ -1,0 +1,126 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2196f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input[type='text'],
+.form-group input[type='number'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-group .subject-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-group .subject-input label {
+  margin-right: 10px;
+  width: 80px;
+}
+
+.form-group .subject-input input[type='text'],
+.form-group .subject-input input[type='number'] {
+  flex: 1;
+}
+
+.form-group button {
+  background-color: #4caf50;
+  color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 20px;
+  align-self: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.chart-container {
+  margin-top: 15px;
+  max-width: 650px; /* Decrease the maximum width */
+  margin-left: auto; /* Center the chart container horizontally */
+  margin-right: auto;
+}
+
+.chart-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f0f0f0;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+button {
+  color: #dfe4df;
+  background-color: #13b413;
+}
